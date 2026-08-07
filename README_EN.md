@@ -10,7 +10,7 @@ This repository provides a reusable `SKILL.md` specification that turns one sour
 - **Back** — a matching functional postcard back with stamp area, divider, address lines, and writing space.
 
 <p align="center">
-  <img src="assets/gallery.webp" alt="Photo to Zine Postcard official example gallery" width="720" />
+  <img src="assets/gallery.jpg" alt="Photo to Zine Postcard official example gallery" width="540" />
 </p>
 
 The gallery above contains nine official examples covering forest, mountain, lake, aerial landscape, architecture, garden, and dusk scenes.
@@ -96,7 +96,8 @@ photo-to-zine-postcard/
 ├── examples/
 │   └── README.md
 └── assets/
-    ├── gallery.webp
+    ├── gallery.jpg
+    ├── gallery.webp   # legacy / compatibility file
     └── README.md
 ```
 
