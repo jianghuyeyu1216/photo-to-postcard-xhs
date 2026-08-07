@@ -10,7 +10,7 @@
 - **背面** — 使用统一、可书写的明信片布局，包括邮票区、分割线、地址线和留言区域。
 
 <p align="center">
-  <img src="assets/gallery.webp" alt="Photo to Zine Postcard 官方案例 Gallery" width="720" />
+  <img src="assets/gallery.jpg" alt="Photo to Zine Postcard 官方案例 Gallery" width="540" />
 </p>
 
 上图为当前的 9 个官方案例，覆盖森林、雪山、湖泊、航拍、建筑、花园和黄昏等不同场景。
@@ -100,7 +100,8 @@ photo-to-zine-postcard/
 ├── examples/
 │   └── README.md
 └── assets/
-    ├── gallery.webp
+    ├── gallery.jpg
+    ├── gallery.webp   # legacy / compatibility file
     └── README.md
 ```
 
