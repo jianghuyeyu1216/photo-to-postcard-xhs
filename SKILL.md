@@ -3,35 +3,57 @@ name: photo-to-zine-postcard
 description: Turn a user-provided photograph into a minimal two-sided 2:3 zine-style postcard. Preserve the original photo above, then create a sparse hand-drawn source-specific motif, minimal metadata, three sampled color swatches, and a matching functional postcard back.
 ---
 
-# Photo to Zine Postcard
+# SKILL.md — photo-zine-postcard-v3.3
 
-**Release:** v1.0.0  
-**Design spec:** v3.3
+## 1. Name
 
-This skill is fully self-contained. Use only the rules in this document. Do not retrieve or reference external style skills.
+**photo-zine-postcard-v3.3**
 
-## Goal
+A compact, self-contained skill for generating a minimal postcard front and back from one source photo.
 
-Generate two coordinated images from one source photograph:
+Use only this document.  
+Do not retrieve or reference external skills.
 
-1. **Front** — original photo embedded above, minimal editorial composition below.
-2. **Back** — unified, functional postcard back.
+---
 
-The design must remain minimal, airy, source-specific, visually attractive, lightly hand-crafted, and print-friendly. The source photo remains primary; the lower area contains one strong visual motif rather than a collection of samples.
+## 2. Goal
 
-## Default format
+Generate two coordinated images:
+
+1. **Front** — original photo embedded above, minimal editorial composition below  
+2. **Back** — unified postcard back
+
+The design must remain:
+
+- minimal
+- airy
+- source-specific
+- visually attractive
+- lightly hand-crafted
+- print-friendly
+
+The source photo remains primary.  
+The lower area contains one strong visual motif, not a collection of samples.
+
+---
+
+## 3. Default Format
 
 - card ratio: portrait `2:3`
-- reference print size: `100 × 150 mm` / `4 × 6 in`
+- reference print size: `100 × 150 mm`
 - background: warm off-white / ivory paper
 - texture: very subtle paper grain
 - original photo: embedded directly
 - lower fragment style: `hand_drawn_first`
-- color palette: enabled by default
+- palette: enabled by default
 
-## Fixed front structure
+---
 
-Do not redesign the overall layout. Use this structure:
+## 4. Fixed Front Structure
+
+Do not redesign the layout.
+
+Use this structure:
 
 1. original photo in the upper area
 2. generous blank transition space
@@ -40,9 +62,11 @@ Do not redesign the overall layout. Use this structure:
 5. optional one much smaller supporting motif
 6. exactly three small color swatches near the lower area
 
-Do not add other visual modules.
+Do not add any other visual modules.
 
-## Main photo
+---
+
+## 5. Main Photo
 
 - Use the actual source photo.
 - Preserve its exact original aspect ratio.
@@ -52,11 +76,15 @@ Do not add other visual modules.
 - Leave a small even paper gap between photo and frame.
 - At most one tiny archival tape detail is allowed.
 
-## Main motif selection
+---
 
-Select the **most visually attractive and source-defining motif**, not merely the easiest object to isolate.
+## 6. Main Motif Selection
 
-Prioritize the strongest combination of:
+The model must first select the **most visually attractive and source-defining motif**, not merely the easiest object to isolate.
+
+### Selection priority
+
+Choose the motif with the strongest combination of:
 
 1. distinctive source identity
 2. visually appealing color
@@ -65,24 +93,47 @@ Prioritize the strongest combination of:
 5. elegant shape
 6. relevance to the overall photograph
 
-Prefer dominant visual features such as vivid water forms, illuminated ridges, expressive plant clusters, recognizable window-and-vine structures, elegant architecture, strong clouds, or distinctive shadows.
+### Prefer
 
-Avoid dull neutral fragments when a stronger colored subject exists. Do not choose visually insignificant debris simply because it is easy to isolate.
+- vivid turquoise or blue water forms
+- distinctive shoreline contours
+- strong mountain silhouettes
+- expressive plant clusters
+- recognizable window-and-vine structures
+- elegant architectural fragments
+- visually dominant clouds or shadows
+
+### Avoid as main motif
+
+- dull beige fragments when a stronger colored subject exists
+- visually insignificant debris
+- the easiest isolated object if it is not the most attractive
+- low-contrast secondary details
+- fragments that do not represent the photograph’s main visual character
+
+### Mandatory rule
 
 When the source contains a clearly dominant color feature, the main motif should normally come from that feature.
 
-Examples:
+For example:
 
-- turquoise lake → turquoise water / shoreline motif
-- mountain sunset → illuminated ridge or sky-lit peak
-- ivy window → window + vine cluster
-- flower close-up → flower, not pot or background
+- turquoise lake photo → select turquoise water / shoreline motif
+- mountain sunset → select illuminated ridge or sky-lit peak
+- ivy window → select window + vine cluster
+- flower close-up → select the flower, not the pot or background
 
-## Hand-drawn-first rule
+---
 
-The main motif should be hand-drawn by default whenever the subject is suitable.
+## 7. Hand-Drawn First Rule
 
-Use a restrained editorial illustration treatment such as:
+The main motif should be **hand-drawn by default** when the subject is suitable.
+
+This is not optional styling language.  
+It is the preferred rendering mode.
+
+### Required hand-drawn treatment
+
+Render the main motif as a restrained editorial illustration using one or a combination of:
 
 - watercolor
 - gouache
@@ -92,43 +143,82 @@ Use a restrained editorial illustration treatment such as:
 - painted contour
 - soft hand-rendered texture
 
-The result must preserve the original silhouette, major internal structure, recognizable identity, and source color character. It should feel more lively than a raw crop while remaining controlled and clearly derived from the source photograph.
+The result must:
 
-Good hand-drawn candidates include water shapes, shorelines, islands, mountains, plants, branches, windows, clouds, rocks, simple buildings, facades, and natural contours.
+- preserve the original silhouette
+- preserve the major internal structure
+- preserve the recognizable identity
+- keep the source color character
+- feel more lively than a raw crop
+- remain clean and controlled
 
-Do **not** use a raw crop as the main motif when the motif is suitable for hand drawing.
+### Do not use a raw crop as the main motif when the motif is suitable for drawing.
+
+Good hand-drawn candidates:
+
+- water shapes
+- shorelines
+- islands
+- mountains
+- plants
+- branches
+- windows
+- clouds
+- rocks
+- simple buildings
+- facades
+- natural contours
 
 ### Crop fallback
 
-Use a source crop only when exact fidelity is important, such as faces, hands, text/signage, precise machinery, complex perspective, dense repeated detail, or objects that lose identity when simplified.
+Use a source crop only when exact fidelity is essential, such as:
+
+- faces
+- hands
+- text or signage
+- precise machinery
+- complex perspective
+- dense repeated detail
+- objects that lose identity when simplified
 
 When using crop fallback, keep it lightly softened and integrated with the paper.
 
-## Main motif size and placement
+---
+
+## 8. Main Motif Size and Placement
+
+The main motif should be clearly visible and larger than in V3 Lite.
 
 Recommended size:
 
-- width: approximately `28%–38%` of card width
-- height: approximately `14%–22%` of card height
+- width: `28%–38%` of card width
+- height: `14%–22%` of card height
 
 Placement:
 
 - lower right
 - lower center-right
 
-The motif must remain subordinate to the main photo but should feel intentional and substantial.
+The motif must remain subordinate to the main photo, but should feel intentional and substantial.
 
-## Supporting motif
+---
 
-Optional only:
+## 9. Supporting Motif
+
+Optional only.
+
+Rules:
 
 - one supporting motif maximum
-- approximately `20%–35%` of the main motif size
+- size: `20%–35%` of the main motif
 - placed close to the main motif
 - must support the same visual story
+- may be hand-drawn or lightly cropped
 - never equal in size to the main motif
 
-## Color swatches
+---
+
+## 10. Color Swatches
 
 Color swatches are enabled by default.
 
@@ -141,13 +231,22 @@ Use exactly **three small swatches** sampled from the source photo:
 Rules:
 
 - small and secondary
-- simple painted squares or restrained swatches
+- simple circles or rectangles
 - no texture sample cards
 - no large palette strip
 - no more than three
+- placed near the lower edge or near the main motif
 - never replace the main motif
 
-## Metadata
+For the turquoise lake example, the swatches should normally include:
+
+- bright turquoise
+- deep teal
+- pale mineral sand
+
+---
+
+## 11. Metadata
 
 Allowed text only:
 
@@ -157,13 +256,24 @@ Allowed text only:
 - `DATE`
 - small index number
 
-Keep metadata compact on the lower left.
+Preferred placement:
 
-Do not invent values such as `Unknown` or `Undated`. Leave location and date blank when the user did not provide them.
+- lower left
+- restrained and compact
 
-Do not add keyword lists, descriptive paragraphs, multiple labels, or long captions.
+Do not add:
 
-## Forbidden front elements
+- keyword lists
+- descriptive paragraphs
+- multiple labels
+- phrases such as `SHORE / ISLAND / MINERAL / LAGOON / SALT`
+- invented metadata such as `Unknown` or `Undated` unless explicitly requested
+
+Leave metadata values blank when not provided.
+
+---
+
+## 12. Forbidden Front Elements
 
 Do not add:
 
@@ -173,9 +283,12 @@ Do not add:
 - material sample cards
 - image sample grids
 - large color blocks
-- generic circles or decorative dots
+- generic circles
+- decorative dots
 - wave doodles
-- badges, seals, or logos
+- badges
+- seals
+- logos
 - keyword lists
 - long captions
 - full-width lower compositions
@@ -183,9 +296,13 @@ Do not add:
 
 If uncertain, simplify.
 
-## Back
+---
 
-Generate a unified postcard back with:
+## 13. Back
+
+Generate a unified postcard back.
+
+Include:
 
 - thin outer border
 - one vertical divider slightly right of center
@@ -199,9 +316,16 @@ Optional:
 - tiny metadata or index near lower-left
 - one extremely faint source-derived watermark
 
-Do not add a large collage, large palette, decorative sample blocks, or anything that reduces writing space.
+Do not add:
 
-## Quality requirements
+- large collage
+- large palette
+- decorative sample blocks
+- anything that reduces writing space
+
+---
+
+## 14. Quality Requirements
 
 Target:
 
@@ -214,16 +338,19 @@ Target:
 - no blur
 - no muddy watercolor
 - no smudged edges
-- suitable for later `4×` super-resolution upscaling
+- suitable for later 4× super-resolution upscaling
 
-Quality requirements improve rendering only; they must not increase the number of visual elements.
+Quality requirements must improve rendering only.  
+They must not increase the number of elements.
 
-## Priority order
+---
+
+## 15. Priority Order
 
 Always follow this order:
 
 1. original photo embedded correctly
-2. fixed minimal layout preserved
+2. V3 Lite layout preserved
 3. large white space preserved
 4. choose the most visually attractive source-defining motif
 5. use hand-drawn rendering when suitable
@@ -235,10 +362,12 @@ Always follow this order:
 
 If any later rule conflicts with an earlier rule, keep the earlier rule.
 
-## Front generation instruction
+---
+
+## 16. Front Prompt Template
 
 ```text
-Create a minimal portrait postcard front using the fixed Photo to Zine Postcard structure.
+Create a minimal portrait postcard front using the fixed V3 Lite structure.
 
 Use the actual source photo in the upper area. Preserve its exact original aspect ratio. Do not repaint, replace, stretch, or crop it unless cropping was explicitly requested. Center it horizontally, keep generous margins, add a very thin frame, and leave a small even paper gap between the photo and frame.
 
@@ -278,7 +407,9 @@ Quality: highest detail quality, sharp and clear, crisp edges, refined hand-draw
 Overall mood: minimal, airy, refined, source-specific, lightly hand-crafted, and collectible.
 ```
 
-## Back generation instruction
+---
+
+## 17. Back Prompt Template
 
 ```text
 Create a matching unified postcard back using the same portrait 2:3 ratio, paper tone, thin-line style, and restrained visual language as the front.
@@ -299,13 +430,16 @@ Do not add a large collage, palette, sample blocks, or decoration that reduces w
 Quality: clean sharp lines, refined paper texture, low noise, no blur, suitable for later 4× super-resolution upscaling.
 ```
 
-## Quick checklist
+---
+
+## 18. Quick Checklist
 
 ### Front
 
 - [ ] original photo embedded
 - [ ] original aspect ratio preserved
 - [ ] thin frame and even paper gap
+- [ ] V3 Lite layout preserved
 - [ ] large whitespace remains
 - [ ] main motif selected for visual attractiveness
 - [ ] dominant color feature preferred
@@ -325,6 +459,8 @@ Quality: clean sharp lines, refined paper texture, low noise, no blur, suitable 
 - [ ] no large collage
 - [ ] output clean and sharp
 
-## One-line definition
+---
 
-**Embed the original photo unchanged in the upper area of a 2:3 postcard, choose the most visually attractive source-defining motif below, render it as a large restrained hand-drawn editorial illustration when suitable, retain one optional supporting motif, include exactly three small source-derived color swatches, and pair it with a clean unified postcard back.**
+## 19. One-Line Definition
+
+**Preserve the V3 Lite layout, embed the original photo unchanged above, choose the most visually attractive source-defining motif below, render it as a large restrained hand-drawn editorial illustration when suitable, retain one optional supporting motif, and always include exactly three small source-derived color swatches.**
