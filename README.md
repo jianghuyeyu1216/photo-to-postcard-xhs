@@ -9,11 +9,25 @@
 - **正面** — 上方完整嵌入原始照片并保持原图比例；下方保留大量留白，生成一个来源明确的手绘主元素、极简元数据和 3 个取自原图的色块。
 - **背面** — 使用统一、可书写的明信片布局，包括邮票区、分割线、地址线和留言区域。
 
-<p align="center">
-  <img src="assets/gallery.jpg" alt="Photo to Zine Postcard 官方案例 Gallery" width="540" />
-</p>
+<table>
+  <tr>
+    <td><a href="assets/forest-homestead.png"><img src="assets/forest-homestead.png" alt="Forest Homestead" /></a></td>
+    <td><a href="assets/alpine-glow.png"><img src="assets/alpine-glow.png" alt="Alpine Glow" /></a></td>
+    <td><a href="assets/turquoise-lake.png"><img src="assets/turquoise-lake.png" alt="Turquoise Lake" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="assets/green-door.png"><img src="assets/green-door.png" alt="Green Door" /></a></td>
+    <td><a href="assets/blue-arc-lake.png"><img src="assets/blue-arc-lake.png" alt="Blue Arc Lake" /></a></td>
+    <td><a href="assets/turquoise-basin.png"><img src="assets/turquoise-basin.png" alt="Turquoise Basin" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="assets/lake-at-dusk.png"><img src="assets/lake-at-dusk.png" alt="Lake at Dusk" /></a></td>
+    <td><a href="assets/college-garden.png"><img src="assets/college-garden.png" alt="College Garden" /></a></td>
+    <td><a href="assets/valley-current.png"><img src="assets/valley-current.png" alt="Valley Current" /></a></td>
+  </tr>
+</table>
 
-上图为当前的 9 个官方案例，覆盖森林、雪山、湖泊、航拍、建筑、花园和黄昏等不同场景。
+以上为当前的 9 个官方案例，覆盖森林、雪山、湖泊、航拍、建筑、花园和黄昏等不同场景。点击图片可查看原图。
 
 ## 快速开始
 
@@ -73,15 +87,15 @@ Photo to Zine Postcard 目前遵循 5 个核心原则：
 
 当前案例包括：
 
-- Forest Homestead
-- Alpine Glow
-- Turquoise Lake
-- Green Door
-- Blue Arc Lake
-- Turquoise Basin
-- Lake at Dusk
-- College Garden
-- Valley Current
+- [Forest Homestead](assets/forest-homestead.png)
+- [Alpine Glow](assets/alpine-glow.png)
+- [Turquoise Lake](assets/turquoise-lake.png)
+- [Green Door](assets/green-door.png)
+- [Blue Arc Lake](assets/blue-arc-lake.png)
+- [Turquoise Basin](assets/turquoise-basin.png)
+- [Lake at Dusk](assets/lake-at-dusk.png)
+- [College Garden](assets/college-garden.png)
+- [Valley Current](assets/valley-current.png)
 
 案例索引见 [`examples/README.md`](examples/README.md)。
 
@@ -100,8 +114,8 @@ photo-to-zine-postcard/
 ├── examples/
 │   └── README.md
 └── assets/
-    ├── gallery.jpg
-    ├── gallery.webp   # legacy / compatibility file
+    ├── forest-homestead.png
+    ├── ...            # 其余语义化命名的官方案例
     └── README.md
 ```
 

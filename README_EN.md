@@ -9,11 +9,25 @@ This repository provides a reusable `SKILL.md` specification that turns one sour
 - **Front** — the original photo stays intact at the top with its aspect ratio preserved; the lower area uses generous whitespace, one source-derived hand-drawn editorial motif, minimal metadata, and three sampled color swatches.
 - **Back** — a matching functional postcard back with stamp area, divider, address lines, and writing space.
 
-<p align="center">
-  <img src="assets/gallery.jpg" alt="Photo to Zine Postcard official example gallery" width="540" />
-</p>
+<table>
+  <tr>
+    <td><a href="assets/forest-homestead.png"><img src="assets/forest-homestead.png" alt="Forest Homestead" /></a></td>
+    <td><a href="assets/alpine-glow.png"><img src="assets/alpine-glow.png" alt="Alpine Glow" /></a></td>
+    <td><a href="assets/turquoise-lake.png"><img src="assets/turquoise-lake.png" alt="Turquoise Lake" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="assets/green-door.png"><img src="assets/green-door.png" alt="Green Door" /></a></td>
+    <td><a href="assets/blue-arc-lake.png"><img src="assets/blue-arc-lake.png" alt="Blue Arc Lake" /></a></td>
+    <td><a href="assets/turquoise-basin.png"><img src="assets/turquoise-basin.png" alt="Turquoise Basin" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="assets/lake-at-dusk.png"><img src="assets/lake-at-dusk.png" alt="Lake at Dusk" /></a></td>
+    <td><a href="assets/college-garden.png"><img src="assets/college-garden.png" alt="College Garden" /></a></td>
+    <td><a href="assets/valley-current.png"><img src="assets/valley-current.png" alt="Valley Current" /></a></td>
+  </tr>
+</table>
 
-The gallery above contains nine official examples covering forest, mountain, lake, aerial landscape, architecture, garden, and dusk scenes.
+These nine official examples cover forest, mountain, lake, aerial landscape, architecture, garden, and dusk scenes. Click an image to view it at full size.
 
 ## Quick Start
 
@@ -69,15 +83,15 @@ See [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) for a practical guide. For 
 
 The current example set includes:
 
-- Forest Homestead
-- Alpine Glow
-- Turquoise Lake
-- Green Door
-- Blue Arc Lake
-- Turquoise Basin
-- Lake at Dusk
-- College Garden
-- Valley Current
+- [Forest Homestead](assets/forest-homestead.png)
+- [Alpine Glow](assets/alpine-glow.png)
+- [Turquoise Lake](assets/turquoise-lake.png)
+- [Green Door](assets/green-door.png)
+- [Blue Arc Lake](assets/blue-arc-lake.png)
+- [Turquoise Basin](assets/turquoise-basin.png)
+- [Lake at Dusk](assets/lake-at-dusk.png)
+- [College Garden](assets/college-garden.png)
+- [Valley Current](assets/valley-current.png)
 
 See [`examples/README.md`](examples/README.md) for the example index.
 
@@ -96,8 +110,8 @@ photo-to-zine-postcard/
 ├── examples/
 │   └── README.md
 └── assets/
-    ├── gallery.jpg
-    ├── gallery.webp   # legacy / compatibility file
+    ├── forest-homestead.png
+    ├── ...            # remaining semantically named official examples
     └── README.md
 ```
 

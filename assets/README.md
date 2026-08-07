@@ -1,12 +1,17 @@
 # Assets
 
-Repository-level visual assets live here.
+Repository-level visual assets live here. Official examples use semantic filenames and are embedded directly in the repository READMEs instead of being combined into a gallery image.
 
-Recommended contents:
+Current examples:
 
-- `gallery.webp` — overview grid of official postcard examples
-- `tutorial-xhs.webp` — social-friendly quick-start tutorial without a direct outbound URL
-- `tutorial-github.webp` — full GitHub usage tutorial for the repository README
-- `cover.webp` — optional social / repository cover image
+- `forest-homestead.png`
+- `alpine-glow.png`
+- `turquoise-lake.png`
+- `green-door.png`
+- `blue-arc-lake.png`
+- `turquoise-basin.png`
+- `lake-at-dusk.png`
+- `college-garden.png`
+- `valley-current.png`
 
 Keep source photographs and generated examples only when you have permission to publish them.
