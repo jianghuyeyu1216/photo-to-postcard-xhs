@@ -2,6 +2,8 @@
 
 [中文](README.md) · **English**
 
+A zine-style photo generation skill better suited for online social media formats (e.g., Xiaohongshu). The image output aspect ratio is adjusted to 3:4 with a resolution of 1080*1440 to better meet social‑media sharing needs. The original skill’s output requirement for the back of the postcard is removed to focus on generating the front‑side image.
+
 Turn your own photographs into minimal editorial zine-style postcards with ChatGPT.
 
 This repository provides a reusable `SKILL.md` specification that turns one source photo into a coordinated postcard set:
@@ -11,33 +13,30 @@ This repository provides a reusable `SKILL.md` specification that turns one sour
 
 <table>
   <tr>
-    <td><a href="assets/forest-homestead.png"><img src="assets/forest-homestead.png" alt="Forest Homestead" /></a></td>
-    <td><a href="assets/alpine-glow.png"><img src="assets/alpine-glow.png" alt="Alpine Glow" /></a></td>
-    <td><a href="assets/turquoise-lake.png"><img src="assets/turquoise-lake.png" alt="Turquoise Lake" /></a></td>
+    <td><a href="assets/1lujiazui.png"><img src="assets/1lujiazui.png" alt="Lujiazui" /></a></td>
+    <td><a href="assets/2yiheyuan.png"><img src="assets/2yiheyuan.png" alt="yiheyuan" /></a></td>
+    <td><a href="assets/3summer pond.png"><img src="assets/3summer pond.png" alt="summer pond" /></a></td>
+    <td><a href="assets/8-gongga mountain.jpg"><img src="assets/8-gongga mountain.jpg" alt="gongga mountain" /></a></td>
   </tr>
   <tr>
-    <td><a href="assets/green-door.png"><img src="assets/green-door.png" alt="Green Door" /></a></td>
-    <td><a href="assets/blue-arc-lake.png"><img src="assets/blue-arc-lake.png" alt="Blue Arc Lake" /></a></td>
-    <td><a href="assets/turquoise-basin.png"><img src="assets/turquoise-basin.png" alt="Turquoise Basin" /></a></td>
-  </tr>
-  <tr>
-    <td><a href="assets/lake-at-dusk.png"><img src="assets/lake-at-dusk.png" alt="Lake at Dusk" /></a></td>
-    <td><a href="assets/college-garden.png"><img src="assets/college-garden.png" alt="College Garden" /></a></td>
-    <td><a href="assets/valley-current.png"><img src="assets/valley-current.png" alt="Valley Current" /></a></td>
+    <td><a href="assets/4February Orchids.png"><img src="assets/4February Orchids.png" alt="February Orchids" /></a></td>
+    <td><a href="assets/5dongji island.png"><img src="assets/5dongji island.png" alt="dongji island" /></a></td>
+    <td><a href="assets/6gongqing forest.png"><img src="assets/6gongqing forest.png" alt="gongqing forest" /></a></td>
+    <td><a href="assets/7yala snow mountain.png"><img src="assets/7yala snow mountain.png" alt="gongqing forest" /></a></td>
   </tr>
 </table>
 
-These nine official examples cover forest, mountain, lake, aerial landscape, architecture, garden, and dusk scenes. Click an image to view it at full size.
+The above are the current 8 official cases, covering various scenarios including city scenery, snow‑capped mountains, flowers, oceans and forests. Click the image to view the original picture.
 
 ## Quick Start
 
-1. Give ChatGPT this repository, or upload [`SKILL.md`](SKILL.md).
+1. Give ChatGPT/doubao this repository, or upload [`SKILL.md`](SKILL.md).
 2. Upload a photo you took.
 3. Ask ChatGPT:
 
 ```text
 Please read SKILL.md from this repository and follow it as the only design specification.
-Generate a Photo to Zine Postcard front and back from my uploaded photo.
+Generate a Photo to Zine Postcard front from my uploaded photo.
 ```
 
 If ChatGPT cannot access the repository directly, download `SKILL.md` and upload it together with your image.
@@ -56,7 +55,7 @@ The goal is not a generic AI poster. It is a printable personal postcard system.
 
 ## Default Output
 
-- portrait `2:3`
+- portrait `3:4`
 - reference size `100 × 150 mm / 4 × 6 in`
 - warm ivory paper
 - embedded original photograph
@@ -79,22 +78,6 @@ This repository is designed for forking and modification. You can customize:
 
 See [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md) for a practical guide. For major style experiments, creating a variant is preferable to making the default skill more complicated.
 
-## Official Examples
-
-The current example set includes:
-
-- [Forest Homestead](assets/forest-homestead.png)
-- [Alpine Glow](assets/alpine-glow.png)
-- [Turquoise Lake](assets/turquoise-lake.png)
-- [Green Door](assets/green-door.png)
-- [Blue Arc Lake](assets/blue-arc-lake.png)
-- [Turquoise Basin](assets/turquoise-basin.png)
-- [Lake at Dusk](assets/lake-at-dusk.png)
-- [College Garden](assets/college-garden.png)
-- [Valley Current](assets/valley-current.png)
-
-See [`examples/README.md`](examples/README.md) for the example index.
-
 ## Repository Structure
 
 ```text
@@ -114,12 +97,6 @@ photo-to-zine-postcard/
     ├── ...            # remaining semantically named official examples
     └── README.md
 ```
-
-## Current Version
-
-**v1.0.0** — first public release of the Photo to Zine Postcard skill.
-
-The current version is optimized for ChatGPT image generation and for clean, detailed output suitable for later 4× super-resolution enlargement.
 
 ## Contributing
 

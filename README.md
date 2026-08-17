@@ -2,42 +2,40 @@
 
 **中文** · [English](README_EN.md)
 
+更适合网络社交媒体(例如小红书)格式的明信片生成skill。将图片输出比例改为3:4,分辨率改为1080*1440，更好满足社交媒体分享需求。去除了原skill中对明信片背面的输出要求，专注于正面图片的生成。
+
 把你拍摄的照片转换成一套极简、留白充足、带手绘二创元素的 Zine 风格明信片。
 
 这个仓库提供一份可直接复用的 [`SKILL.md`](SKILL.md)，用于指导 ChatGPT 将一张照片生成一套统一的明信片正反面：
 
 - **正面** — 上方完整嵌入原始照片并保持原图比例；下方保留大量留白，生成一个来源明确的手绘主元素、极简元数据和 3 个取自原图的色块。
-- **背面** — 使用统一、可书写的明信片布局，包括邮票区、分割线、地址线和留言区域。
 
 <table>
   <tr>
-    <td><a href="assets/forest-homestead.png"><img src="assets/forest-homestead.png" alt="Forest Homestead" /></a></td>
-    <td><a href="assets/alpine-glow.png"><img src="assets/alpine-glow.png" alt="Alpine Glow" /></a></td>
-    <td><a href="assets/turquoise-lake.png"><img src="assets/turquoise-lake.png" alt="Turquoise Lake" /></a></td>
+    <td><a href="assets/1lujiazui.png"><img src="assets/1lujiazui.png" alt="Lujiazui" /></a></td>
+    <td><a href="assets/2yiheyuan.png"><img src="assets/2yiheyuan.png" alt="yiheyuan" /></a></td>
+    <td><a href="assets/3summer pond.png"><img src="assets/3summer pond.png" alt="summer pond" /></a></td>
+    <td><a href="assets/8-gongga mountain.jpg"><img src="assets/8-gongga mountain.jpg" alt="gongga mountain" /></a></td>
   </tr>
   <tr>
-    <td><a href="assets/green-door.png"><img src="assets/green-door.png" alt="Green Door" /></a></td>
-    <td><a href="assets/blue-arc-lake.png"><img src="assets/blue-arc-lake.png" alt="Blue Arc Lake" /></a></td>
-    <td><a href="assets/turquoise-basin.png"><img src="assets/turquoise-basin.png" alt="Turquoise Basin" /></a></td>
-  </tr>
-  <tr>
-    <td><a href="assets/lake-at-dusk.png"><img src="assets/lake-at-dusk.png" alt="Lake at Dusk" /></a></td>
-    <td><a href="assets/college-garden.png"><img src="assets/college-garden.png" alt="College Garden" /></a></td>
-    <td><a href="assets/valley-current.png"><img src="assets/valley-current.png" alt="Valley Current" /></a></td>
+    <td><a href="assets/4February Orchids.png"><img src="assets/4February Orchids.png" alt="February Orchids" /></a></td>
+    <td><a href="assets/5dongji island.png"><img src="assets/5dongji island.png" alt="dongji island" /></a></td>
+    <td><a href="assets/6gongqing forest.png"><img src="assets/6gongqing forest.png" alt="gongqing forest" /></a></td>
+    <td><a href="assets/7yala snow mountain.png"><img src="assets/7yala snow mountain.png" alt="gongqing forest" /></a></td>
   </tr>
 </table>
 
-以上为当前的 9 个官方案例，覆盖森林、雪山、湖泊、航拍、建筑、花园和黄昏等不同场景。点击图片可查看原图。
+以上为当前的 8 个官方案例，覆盖城市风光、雪山、花卉、海洋、森林等不同场景。点击图片可查看原图。
 
 ## 快速开始
 
-1. 把这个仓库提供给 ChatGPT，或者直接上传 [`SKILL.md`](SKILL.md)。
+1. 把这个仓库提供给 ChatGPT/豆包，或者直接上传 [`SKILL.md`](SKILL.md)。
 2. 上传一张你拍摄的照片。
 3. 输入：
 
 ```text
 请读取这个仓库里的 SKILL.md，并把它作为唯一的设计规范。
-把我上传的照片生成一套 Photo to Zine Postcard 明信片正反面。
+把我上传的照片生成一套 Photo to Zine Postcard 明信片正面。
 ```
 
 如果 ChatGPT 无法直接访问仓库，也可以下载 `SKILL.md`，与照片一起上传。
@@ -56,7 +54,7 @@ Photo to Zine Postcard 目前遵循 5 个核心原则：
 
 ## 默认输出
 
-- 纵向 `2:3`
+- 纵向 `3:4`
 - 参考成品尺寸：`100 × 150 mm / 4 × 6 in`
 - 暖白 / 象牙白纸张背景
 - 上方直接嵌入原始照片
@@ -83,22 +81,6 @@ Photo to Zine Postcard 目前遵循 5 个核心原则：
 
 建议先阅读 [`docs/CUSTOMIZATION.md`](docs/CUSTOMIZATION.md)。如果改动较大，更推荐创建独立 variant，而不是不断给默认 Skill 增加规则。
 
-## 官方案例
-
-当前案例包括：
-
-- [Forest Homestead](assets/forest-homestead.png)
-- [Alpine Glow](assets/alpine-glow.png)
-- [Turquoise Lake](assets/turquoise-lake.png)
-- [Green Door](assets/green-door.png)
-- [Blue Arc Lake](assets/blue-arc-lake.png)
-- [Turquoise Basin](assets/turquoise-basin.png)
-- [Lake at Dusk](assets/lake-at-dusk.png)
-- [College Garden](assets/college-garden.png)
-- [Valley Current](assets/valley-current.png)
-
-案例索引见 [`examples/README.md`](examples/README.md)。
-
 ## 仓库结构
 
 ```text
@@ -118,12 +100,6 @@ photo-to-zine-postcard/
     ├── ...            # 其余语义化命名的官方案例
     └── README.md
 ```
-
-## 当前版本
-
-**v1.0.0** — Photo to Zine Postcard 首个公开版本。
-
-当前版本主要针对 ChatGPT 图片生成进行优化，同时强调清晰边缘、精细纹理和低噪点，方便后续进行 4× 超分辨率放大。
 
 ## 参与贡献
 

@@ -1,13 +1,13 @@
 ---
-name: photo-to-zine-postcard
-description: Turn a user-provided photograph into a minimal two-sided 2:3 zine-style postcard. Preserve the original photo above, then create a sparse hand-drawn source-specific motif, minimal metadata, three sampled color swatches, and a matching functional postcard back.
+name: photo-to-postcard-xhs
+description: Turn a user-provided photograph into a minimal 3:4 zine-style postcard. Preserve the original photo above, then create a sparse hand-drawn source-specific motif, minimal metadata, three sampled color swatches, and a matching functional postcard back.
 ---
 
-# SKILL.md — photo-zine-postcard-v3.3
+# SKILL.md — photo-to-postcard-xhs
 
 ## 1. Name
 
-**photo-zine-postcard-v3.3**
+**photo-to-postcard-xhs**
 
 A compact, self-contained skill for generating a minimal postcard front and back from one source photo.
 
@@ -18,10 +18,9 @@ Do not retrieve or reference external skills.
 
 ## 2. Goal
 
-Generate two coordinated images:
+Generate one coordinated images:
 
 1. **Front** — original photo embedded above, minimal editorial composition below  
-2. **Back** — unified postcard back
 
 The design must remain:
 
@@ -39,13 +38,13 @@ The lower area contains one strong visual motif, not a collection of samples.
 
 ## 3. Default Format
 
-- card ratio: portrait `2:3`
-- reference print size: `100 × 150 mm`
+- card ratio: portrait `3:4`
 - background: warm off-white / ivory paper
 - texture: very subtle paper grain
 - original photo: embedded directly
 - lower fragment style: `hand_drawn_first`
 - palette: enabled by default
+- Image resolution: 1080 × 1440 pixels (width × height)
 
 ---
 
@@ -73,9 +72,9 @@ Do not add any other visual modules.
 - Do not stretch, repaint, replace, or crop it by default.
 - Place it in the upper half, centered horizontally.
 - Add a very thin frame.
-- Leave a small even paper gap between photo and frame.
+- Leave a small even paper gap between photo and frame. Same aspect ratio as the original image. Do not resize.
 - At most one tiny archival tape detail is allowed.
-
+- Preserve the original photo’s contrast and style; do not alter them arbitrarily。
 ---
 
 ## 6. Main Motif Selection
@@ -269,8 +268,13 @@ Do not add:
 - phrases such as `SHORE / ISLAND / MINERAL / LAGOON / SALT`
 - invented metadata such as `Unknown` or `Undated` unless explicitly requested
 
-Leave metadata values blank when not provided.
+Leave metadata values blank when not provided. 
 
+Additional Requirements:
+- Write tile with bold font and in Chinese.
+- Subtitle should shortly describe the image in English.
+- Location shows where the main photo was taken
+- Keep the DATE field blank; do not fill in the photo’s shooting date.
 ---
 
 ## 12. Forbidden Front Elements
@@ -298,34 +302,7 @@ If uncertain, simplify.
 
 ---
 
-## 13. Back
-
-Generate a unified postcard back.
-
-Include:
-
-- thin outer border
-- one vertical divider slightly right of center
-- stamp box in the upper-right
-- 3 or 4 address lines on the right
-- large blank message area on the left
-
-Optional:
-
-- small `POST CARD` text near upper-left
-- tiny metadata or index near lower-left
-- one extremely faint source-derived watermark
-
-Do not add:
-
-- large collage
-- large palette
-- decorative sample blocks
-- anything that reduces writing space
-
----
-
-## 14. Quality Requirements
+## 13. Quality Requirements
 
 Target:
 
@@ -345,7 +322,7 @@ They must not increase the number of elements.
 
 ---
 
-## 15. Priority Order
+## 14. Priority Order
 
 Always follow this order:
 
@@ -364,7 +341,7 @@ If any later rule conflicts with an earlier rule, keep the earlier rule.
 
 ---
 
-## 16. Front Prompt Template
+## 15. Front Prompt Template
 
 ```text
 Create a minimal portrait postcard front using the fixed V3 Lite structure.
@@ -409,30 +386,7 @@ Overall mood: minimal, airy, refined, source-specific, lightly hand-crafted, and
 
 ---
 
-## 17. Back Prompt Template
-
-```text
-Create a matching unified postcard back using the same portrait 2:3 ratio, paper tone, thin-line style, and restrained visual language as the front.
-
-Keep it functional and mostly blank.
-
-Include:
-- thin outer border
-- one vertical divider slightly right of center
-- stamp box in the upper-right
-- 3 or 4 address lines on the right
-- large blank message area on the left
-
-Optionally add small POST CARD text near the upper-left and tiny metadata or index near the lower-left.
-
-Do not add a large collage, palette, sample blocks, or decoration that reduces writing space.
-
-Quality: clean sharp lines, refined paper texture, low noise, no blur, suitable for later 4× super-resolution upscaling.
-```
-
----
-
-## 18. Quick Checklist
+## 16. Quick Checklist
 
 ### Front
 
@@ -461,6 +415,6 @@ Quality: clean sharp lines, refined paper texture, low noise, no blur, suitable 
 
 ---
 
-## 19. One-Line Definition
+## 17. One-Line Definition
 
 **Preserve the V3 Lite layout, embed the original photo unchanged above, choose the most visually attractive source-defining motif below, render it as a large restrained hand-drawn editorial illustration when suitable, retain one optional supporting motif, and always include exactly three small source-derived color swatches.**
