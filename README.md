@@ -14,14 +14,14 @@
   <tr>
     <td><a href="assets/1lujiazui.png"><img src="assets/1lujiazui.png" alt="Lujiazui" /></a></td>
     <td><a href="assets/2yiheyuan.png"><img src="assets/2yiheyuan.png" alt="yiheyuan" /></a></td>
-    <td><a href="assets/3summer pond.png"><img src="assets/3summer pond.png" alt="summer pond" /></a></td>
-    <td><a href="assets/8-gongga mountain.jpg"><img src="assets/8-gongga mountain.jpg" alt="gongga mountain" /></a></td>
+    <td><a href="assets/3summer-pond.png"><img src="assets/3summer-pond.png" alt="summer pond" /></a></td>
+    <td><a href="assets/8-gongga-mountain.jpg"><img src="assets/8-gongga-mountain.jpg" alt="gongga mountain" /></a></td>
   </tr>
   <tr>
-    <td><a href="assets/4February Orchids.png"><img src="assets/4February Orchids.png" alt="February Orchids" /></a></td>
-    <td><a href="assets/5dongji island.png"><img src="assets/5dongji island.png" alt="dongji island" /></a></td>
-    <td><a href="assets/6gongqing forest.png"><img src="assets/6gongqing forest.png" alt="gongqing forest" /></a></td>
-    <td><a href="assets/7yala snow mountain.png"><img src="assets/7yala snow mountain.png" alt="gongqing forest" /></a></td>
+    <td><a href="assets/4February-Orchids.png"><img src="assets/4February-Orchids.png" alt="February Orchids" /></a></td>
+    <td><a href="assets/5dongji-island.png"><img src="assets/5dongji-island.png" alt="dongji island" /></a></td>
+    <td><a href="assets/6gongqing-forest.png"><img src="assets/6gongqing-forest.png" alt="gongqing forest" /></a></td>
+    <td><a href="assets/7yala-snow-mountain.png"><img src="assets/7yala-snow-mountain.png" alt="yala snow mountain" /></a></td>
   </tr>
 </table>
 
